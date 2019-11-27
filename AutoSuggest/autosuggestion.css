@@ -1,0 +1,50 @@
+.autosuggest {
+  width: 100%;
+  border: solid 1px #b4c2d4;
+  border-radius: 2px;
+  font-size: 14px;
+  margin-top: 4px;
+  position: relative;
+}
+
+.autosuggest input {
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.autosuggest ul {
+  width: 100%;
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #b4c2d4;
+  border: solid 1px #b4c2d4;
+}
+.autoInputBox {
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  left: -1px;
+  width: calc(100% + 2px);
+}
+
+.autosuggest ul::before {
+  content: "";
+}
+
+.autosuggest li {
+  padding: 4px;
+  cursor: pointer;
+  border: 2px;
+  font-size: 16px;
+}
+
+.autosuggest li:hover,
+.autoInputBox-li.hovered-item {
+  background-color: #dcdcdc;
+}
